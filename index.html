@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDayDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        
+        <h1>Have a nice and productive day !</h1>
+
+        <section class="top">
+        <input type="text" id="task" name="task" placeholder="Enter a task <3">
+        <select name="Categorie" id="categorie">
+            <option value="Perso">Perso</option>
+            <option value="Pro">Pro</option>
+        </select>
+        <button>Ok</button>
+        </section>
+
+        <section class="toDos">
+        <article class="perso">
+            <h2>Perso</h2>
+            <ul id="ulPerso"></ul>
+        </article>
+
+        <article class="pro">
+            <h2>Pro</h2>
+            <ul id="ulPro"></ul>
+        </article>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
