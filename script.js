@@ -24,6 +24,17 @@ taskInput.addEventListener("click", (button) => {
     boutonCross.addEventListener("click",() => {
         li.remove()
 })
+
+const boutonPencil = document.createElement("img");
+    boutonPencil.src = "pencil-solid.svg";
+    li.appendChild(boutonPencil);
+    boutonPencil.addEventListener("click",() => {
+        const newliTxt = prompt("Resaisir la tâche");
+        li.firstChild.textContent=(newliTxt);
+        console.log(li.lastChild);
+        // li.replaceChild(newLi, last);
+})
+
 })
 
 // const boutonCheck = document.createElement("button");
